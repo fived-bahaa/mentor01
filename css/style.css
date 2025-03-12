@@ -1,0 +1,94 @@
+:root {
+  --front-color: #fafafa
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+/* Header Start */
+header {position: relative; z-index: 100;}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+header .container ul.main {
+  display: flex;
+}
+header .container ul.main li a {
+  display: flex;
+  padding: 20px 10px;
+  outline: none;
+  border: none;
+  color: hsl(233, 8%, 62%)
+}
+header .container ul.main li a.active {
+  border-width: 3px;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, hsl(192, 70%, 51%) , hsl(136, 65%, 51%));
+  color: hsl(233, 26%, 24%);
+}
+.front .container .text button,
+header .container button {
+  border: none;
+  outline: none;
+  width: fit-content;
+}
+.front .container .text button a  ,
+header .container button a {
+  background-image: linear-gradient(to left, hsl(192, 70%, 51%) , hsl(136, 65%, 51%));
+  padding: 10px 20px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+/* Header End */
+/* Front Start */
+.front {
+  background-color: var(--front-color);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+}
+.front .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 600px;
+}
+.front .container .text {
+  margin-right: 25px;
+  flex: 0.5;
+}
+.front .image .one{
+  position: absolute;
+  top: -260px;
+}
+.front .image 
